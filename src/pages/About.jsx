@@ -17,13 +17,13 @@ function About() {
 
       <div className='content-div' >
         <h2>Welcome to GoFit – your ultimate fitness companion!</h2>
-        <p>GoFit is designed to help you achieve your fitness goals with personalized guidance and a supportive community. Whether you're starting your fitness journey or looking to take your workouts to the next level, GoFit is here to make your experience simple, motivating, and effective.</p>
+        <p>GoFit is designed to help you achieve your fitness goals. Whether you're starting your fitness journey or looking to take your workouts to the next level, GoFit is here to make your experience simple, motivating, and effective.</p>
         <h3>Our Features:</h3>
         <ul>
           <li>Exercise Guides: Detailed exercise guides for various muscle groups like neck, back, shoulder, and more to ensure you perform workouts with proper form.</li>
           <li>BMI Calculator: Easily calculate your Body Mass Index to track your fitness progress.</li>
           <li>AI Chatbot Assistance: Our chatbot answers all your fitness-related questions, including workout plans, diet tips, and exercise suggestions.</li>
-          <li>Secure Access: Your data is safe with our protected routes and Firebase authentication system.</li>
+          <li>Secure Access: We prioritize your privacy and security, ensuring that your data is protected and accessible only to you.</li>
         </ul>
         <p>At GoFit, we believe that fitness is not just about workouts – it's about building healthy habits and supporting each other every step of the way.</p>
         <p>Start your journey with GoFit today and become the best version of yourself!</p>

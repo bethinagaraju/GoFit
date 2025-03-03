@@ -29,6 +29,7 @@ function Login() {
       if(!response){
         alert('user not found');
         setUser(null);
+        console.log(response);
         return;
       }
       else{
@@ -36,7 +37,18 @@ function Login() {
       navigate('/welcome');
       setName(response.user.displayName);
       }
+    })
+    .catch((error)=>{
+      if(error.code === 'auth/user-not-found'){
+        alert('user not found');
+        setUser(null);
+        return;
+      }
+      if(error.code === 'auth/invalid-email'){
+      alert('invalid email');
+    }
     });
+
 
   };
 

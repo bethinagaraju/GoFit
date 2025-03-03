@@ -35,9 +35,10 @@ function Home() {
       alert('USer created successfully.');
       navigate('/login');
     }
-    else{
-      alert('user already exists you login.');
-    }
+    // else{
+    //   console.log(response);
+    //   alert('user already exists you login.');
+    // }
   };
 
     // (6×0.3048)+(2×0.0254)=1.8288+0.0508=1.8796 m

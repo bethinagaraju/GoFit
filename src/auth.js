@@ -20,7 +20,15 @@ export const signUp = async (email, password, displayName) => {
 
     return true;
   } catch (error) {
-    console.error("Error signing up:", error.message);
+
+    if (error.code === "auth/invalid-email") {
+      alert("Invalid Email Address. Please enter a valid email.");
+    }
+    
+    else if (error.code === "auth/email-already-in-use") {
+      alert("Your already existing user please Login.");
+    }
+    
     return false;
   }
 };

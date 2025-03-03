@@ -8,6 +8,8 @@ import { TextField, Container, Typography, Paper } from "@mui/material";
 import { getAuth } from "firebase/auth";
 import { signUp } from "../auth";
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 // import { signInWithEmailAndPassword } from "firebase/auth";.
 // import { createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -160,9 +162,9 @@ function Home() {
 
           <p>already have an account</p>
           <Typography variant="body2" align="center">
-            <a href="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
               Login here
-            </a>
+            </Link>
           </Typography>
         </form>
       </Paper>

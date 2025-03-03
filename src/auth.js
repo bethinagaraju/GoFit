@@ -6,7 +6,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, up
 export const signUp = async (email, password, displayName) => {
   try {
 
-    if(password.length < 9){
+    if(password.length < 8){
       alert("Password must be at least 8 characters long.");
       return;
     }

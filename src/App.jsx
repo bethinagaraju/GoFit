@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
 import { Button } from '@mui/material';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Login from './pages/Login'
 import Welcome from './pages/Welcome'
 import Excercise from './pages/Excercise'

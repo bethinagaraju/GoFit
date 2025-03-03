@@ -66,7 +66,7 @@ function Home() {
             btn1.style.color = 'red';
         }
 
-        console.log(bmi);
+        
     }
   return (
     <div className='Home'>

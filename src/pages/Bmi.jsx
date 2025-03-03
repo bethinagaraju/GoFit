@@ -105,7 +105,7 @@ const BmiGraph = () => {
             >
                 Calculate BMI
             </Button>
-            {/* {bmi && <h3 id="warn">Your BMI: {bmi} ({category})</h3>} */}
+            
             <h3 id="warn" style={{ color: category === "Underweight" ? "blue" : category === "Normal" ? "green" : category === "Overweight" ? "orange" : category === "Obese" ? "red" : "black" }}>
     Your BMI: {bmi} ({category})
 </h3>

@@ -40,9 +40,7 @@ function App() {
             <ProtectedRoute><ChatUI /></ProtectedRoute>} />
 
           <Route path='/about' element={<About />} />
-          {/* <Route path='/aibot' element={<Aibot />} /> */}
-          
-          {/* <Route path="/welcome" element={<Welcome />} /> */}
+      
         </Routes>
       </div>
     </Router>

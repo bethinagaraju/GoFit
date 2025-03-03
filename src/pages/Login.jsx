@@ -24,12 +24,12 @@ function Login() {
   
     e.preventDefault();
     signIn(email, password).then((response) => {
-      console.log(response);
+      
 
       if(!response){
         alert('user not found');
         setUser(null);
-        console.log(response);
+        
         return;
       }
       else{
@@ -90,4 +90,5 @@ function Login() {
 }
 
 export default Login;
+
 

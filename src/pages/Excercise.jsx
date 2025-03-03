@@ -13,13 +13,13 @@ function Excercise() {
   const [isLoading, setIsLoading] = useState(false); // State for loader
 
   const fetchExercises = async () => {
-    console.log("Fetching exercises...");
+    
     if (!bodyPart) return; // Ensure bodyPart is provided
 
     setIsLoading(true); // Start loading
     try {
       const data = await getExercises(bodyPart);
-      console.log(data);
+      
       if (data) {
         setWorkouts(data);
       }
@@ -35,9 +35,7 @@ function Excercise() {
 
   return (
     <div className='design'>
-      {/* <Button onClick={() => console.log(bodyPart)}>click</Button>
-      // <Button onClick={fetchExercises}>fetch</Button> */}
-      
+     
   
         <ArrowBackIcon style={{ color: "#1976d2", position: "fixed", size:"50px", cursor:"pointer" }} onClick={() => window.history.back()}/>
       
@@ -49,9 +47,9 @@ function Excercise() {
         </div>
       ) : (
         
-        workouts.map((workout) => (
-          <div>
-          <Design key={workout.id} 
+        workouts.map((workout, index) => (
+          <div key={index} >
+          <Design 
             bodyPart={workout.bodyPart} 
             name={workout.name} 
             gifUrl={workout.gifUrl} 
@@ -66,4 +64,5 @@ function Excercise() {
 }
 
 export default Excercise;
+
 

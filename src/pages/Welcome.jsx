@@ -10,10 +10,6 @@ import { ClassNames } from '@emotion/react';
 
 
 
-
-
-
-
 function Welcome() {
 
   
@@ -24,30 +20,17 @@ function Welcome() {
   const [userName, setUserName] = useState('');
   const [customer, setCustomer] = useState('');
   const{name} = useBodyPart();
-  // const [streak, setStreak] = useState(0);
 
 
 
 
   let stringname;
   useEffect(() => {
-    // let stringname = '';
-    // let flag = 0;
-    // for (let i = 0; i < name.length; i++) {
-    //   if (name[i] === '@') {
-    //     flag = 1;
-    //   }
-    //   if (flag === 0 && name[i] !== ' ') {
-    //     stringname += name[i];
-    //   }
-    //   if (flag === 1) {
-    //     break;
-    //   }
-    // }
+
 
     setCustomer(name);
 
-    console.log(customer);
+    // console.log(customer);
   },[name])
 
   function handle(value) {
@@ -56,32 +39,19 @@ function Welcome() {
   }
 
 
-  useEffect(() => {
-    console.log(bodyPart);
-  }, [bodyPart]);
+  // useEffect(() => {
+  //   console.log(bodyPart);
+  // }, [bodyPart]);
   
 
-  // const fetchExercises = async () => {
-  //   console.log("Fetching exercises...");
-  //   if (!bodyPart) return; // Ensure bodyPart is provided
 
-  //   try {
-  //     const data = await getExercises(bodyPart); // Corrected bodyPart usage
-  //     console.log(data);
-  //     if (data) {
-  //       setExercises(data);
-  //     }
-  //   } catch (error) {
-  //     console.error("Error fetching exercises:", error.message);
-  //   }
-  // };
 
   
   return (
     <div>
 
     
-      {/* <button onClick={checkbtn}>CLICK</button> */}
+     
 
   
 
@@ -208,3 +178,4 @@ function Welcome() {
 }
 
 export default Welcome;
+

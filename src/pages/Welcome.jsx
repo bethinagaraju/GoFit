@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Welcome.css';
+import './welcome.css';
 
 import getExercises from "../getExercises";
 import { useState , createContext, useContext} from 'react';

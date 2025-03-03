@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import './pages/ChatUI.css';
+import './ChatUi.css';
 import {
   Box,
   Card,

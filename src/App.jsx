@@ -39,7 +39,8 @@ function App() {
           <Route path='/chatui' element={
             <ProtectedRoute><ChatUI /></ProtectedRoute>} />
 
-          <Route path='/about' element={<About />} />
+          <Route path='/about' element={
+            <ProtectedRoute><About /></ProtectedRoute>} />
       
         </Routes>
       </div>

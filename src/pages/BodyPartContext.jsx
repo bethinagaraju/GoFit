@@ -13,14 +13,18 @@ export const BodyPartProvider = ({ children }) => {
   // const [user, setUser] = useState(null);
 
 
+  // const [user, setUser] = useState(() => {
+  //   return localStorage.getItem("user") || ""; // Load from localStorage on startup
+  // });
   const [user, setUser] = useState(() => {
-    return localStorage.getItem("user") || ""; // Load from localStorage on startup
+    const storedUser = localStorage.getItem("user");
+    return storedUser ? JSON.parse(storedUser) : null; // Parse JSON if user exists
   });
 
   useEffect(() => {
     localStorage.setItem("bodyPart", bodyPart); // Save to localStorage when bodyPart changes
     localStorage.setItem("name", name); // Save to localStorage when name changes
-    localStorage.setItem("user", user); // Save to localStorage when user changes
+    localStorage.setItem("user", JSON.stringify(user)); // Save to localStorage when user changes
   }, [bodyPart, name, user]);
 
 
